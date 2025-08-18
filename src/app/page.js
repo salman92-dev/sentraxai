@@ -24,7 +24,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-[#1B1B1B]">
       <div className="hero-bg overflow-hidden">
         <div className="w-full xl:container mx-auto md:px-6">
         <Navbar/>
@@ -83,16 +83,16 @@ export default function Home() {
                
                   <div className="flex gap-4 mt-6">
                     <a href="" className="duration-200 hover:scale-120">
-                       <Image src="/x.svg" alt="x" width={40} height={40} />
+                       <Image src="/x.png" alt="x" width={40} height={40} />
                     </a>
                     <a href="" className="duration-200 hover:scale-120">
-                       <Image src="/tg.svg" alt="x" width={40} height={40} />
+                       <Image src="/tg.png" alt="x" width={40} height={40} />
                     </a>
                     <a href="" className="duration-200 hover:scale-120">
-                       <Image src="/insta.svg" alt="x" width={40} height={40} />
+                       <Image src="/insta.png" alt="x" width={40} height={40} />
                     </a>
                     <a href="" className="duration-200 hover:scale-120">
-                       <Image src="/yt.svg" alt="x" width={40} height={40} />
+                       <Image src="/yt.png" alt="x" width={40} height={40} />
                     </a>
                   </div>
                 </div>
