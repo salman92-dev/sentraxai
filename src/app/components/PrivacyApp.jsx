@@ -36,7 +36,7 @@ const PrivacyApp = () => {
               variants={fadeUp}
               custom={0}
             >
-              <h3 className="prompt-medium text-3xl md:text-5xl">
+              <h3 className="prompt-medium text-3xl md:text-5xl text-transparent bg-clip-text gradient-4">
                 Privacy Camera App
               </h3>
               <TertiaryButton text="Phase 3 Development" url="#" />

@@ -27,7 +27,7 @@ const Privacy = () => {
             className="flex flex-wrap items-center justify-between"
           >
             <div className="flex flex-col gap-3">
-              <h3 className="prompt-medium text-3xl md:text-5xl">
+              <h3 className="prompt-medium text-3xl md:text-5xl text-transparent bg-clip-text gradient-4">
                 Privacy Dashboard
               </h3>
               <TertiaryButton text="Phase 2 Development" url="#" />

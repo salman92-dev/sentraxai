@@ -28,7 +28,7 @@ const Web3 = () => {
                         className="flex flex-wrap items-center justify-between"
                     >
                         <div className="flex flex-col gap-3">
-                            <h3 className="prompt-medium text-3xl md:text-5xl">Web3 Social Media Platform</h3>
+                            <h3 className="prompt-medium text-3xl md:text-5xl text-transparent bg-clip-text gradient-4">Web3 Social Media Platform</h3>
                             <TertiaryButton text="Confidential Development" url="#" />
                             <p className="prompt-regular text-white/63">
                                 A groundbreaking platform that will redefine social media privacy in the Web3 era..

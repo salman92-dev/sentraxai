@@ -59,7 +59,7 @@ const Future = () => {
         transition={{ duration: 0.8, ease: 'easeOut' }}
         viewport={{ once: true }}
       >
-        <h2 className="text-center prompt-medium text-5xl md:text-7xl !leading-[120%] gradient-4 bg-transparent bg-clip-text">
+        <h2 className="text-center prompt-medium text-5xl md:text-7xl !leading-[120%] gradient-4 text-transparent bg-clip-text">
           The Complete Privacy Ecosystem
         </h2>
       </motion.div>

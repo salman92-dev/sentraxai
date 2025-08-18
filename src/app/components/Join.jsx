@@ -12,7 +12,7 @@ const Join = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
                     viewport={{ once: true, amount: 0.3 }}
-                    className="text-center prompt-medium text-5xl md:text-7xl !leading-[120%] gradient-4 bg-transparent bg-clip-text"
+                    className="text-center prompt-medium text-5xl md:text-7xl !leading-[120%] gradient-4 text-transparent bg-clip-text"
                 >
                     Join the Privacy Revolution
                 </motion.h2>

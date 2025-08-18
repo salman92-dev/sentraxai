@@ -62,7 +62,7 @@ const Roadmap = () => {
               >
                 <p className="gradient-6 p-2 text-center rounded-lg">{item.phase}</p>
                 <div className="p-8">
-                  <h4 className="prompt-semi text-4xl mb-6">{item.title}</h4>
+                  <h4 className="prompt-semi text-4xl mb-6 text-transparent bg-clip-text gradient-4">{item.title}</h4>
                   <ul className="space-y-2 list-disc">
                     {item.items.map((li, i) => (
                       <li key={i} className="text-white/63">
@@ -121,7 +121,7 @@ const Roadmap = () => {
               >
                 <p className="gradient-6 p-2 text-center rounded-lg">{item.phase}</p>
                 <div className="p-8">
-                  <h4 className="prompt-semi text-4xl mb-6">{item.title}</h4>
+                  <h4 className="prompt-semi text-4xl mb-6 text-transparent bg-clip-text gradient-4">{item.title}</h4>
                   <ul className="space-y-2 list-disc">
                     {item.items.map((li, i) => (
                       <li key={i} className="text-white/63">

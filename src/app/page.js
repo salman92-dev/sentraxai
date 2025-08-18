@@ -36,7 +36,7 @@ export default function Home() {
                 <BlurText
                   text="Privacy-First Tools for Web3"
                   delay={150} // time between each word/letter animation
-                  className="text-5xl prompt-semi md:text-7xl max-md:leading-[120%] md:max-w-2xl"
+                  className="text-5xl prompt-semi md:text-7xl max-md:leading-[120%] md:max-w-2xl text-white"
                   animateBy="words" // or "letters"
                   direction="top" // or "bottom"
                   stepDuration={0.4}
