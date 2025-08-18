@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1B1B1B;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: prompt-regular;
+  src: url(/fonts/prompt/Prompt-Regular.ttf);
+}
+.prompt-regular {
+  font-family: prompt-regular;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: prompt-regular-i;
+  src: url(/fonts/prompt/Prompt-Regular.ttf);
+}
+.prompt-regular-i {
+  font-family: prompt-regular-i;
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: prompt-medium;
+  src: url(/fonts/prompt/Prompt-Medium.ttf);
+}
+.prompt-medium {
+  font-family: prompt-medium;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: prompt-semibold;
+  src: url(/fonts/prompt/Prompt-SemiBold.ttf);
+}
+.prompt-semi {
+  font-family: prompt-semibold;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: prompt-bold;
+  src: url(/fonts/prompt/Prompt-Bold.ttf);
+}
+.prompt-bold {
+  font-family: prompt-bold;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.gradient-1 {
+  background-image: linear-gradient(180deg, #7E61FF 0%, #FFBD7E 232%);
+}
+.gradient-2 {
+  background-image: linear-gradient(235.81deg, rgba(255, 255, 255, 0.08) 7.67%, rgba(126, 97, 255, 0.19) 121.98%);
+}
+.gradient-3 {
+  background-image: linear-gradient(90deg, #9D9DEC 0%, #F3BB94 100%);
+}
+.gradient-4 {
+  background-image: linear-gradient(180deg, #FFFFFF 15.41%, rgba(255, 255, 255, 0.7) 100%);
+}
+.gradient-5 {
+  background-image: linear-gradient(180deg, #7700DF 0%, #EE7C2C 53.75%, rgba(0, 0, 0, 0) 100%);
+}
+.gradient-6 {
+   background-image: linear-gradient(108.94deg, #7E61FF -26.06%, #FFBD7E 73.56%);
+}
+.gradient-7 {
+  background-image: linear-gradient(235.81deg, rgba(255, 255, 255, 0.08) 7.67%, rgba(126, 97, 255, 0.09) 121.98%);
+}
+.gradient-8 {
+  background: linear-gradient(348.19deg, rgba(255, 255, 255, 0.06) 5%, rgba(5, 7, 26, 0) 83.27%);
+}
+.gradient-9 {
+  background: linear-gradient(180deg, #7E61FF 15.02%, #FFBD7E 135.19%);
+}
+.gradient-10 {
+  background-image: linear-gradient(180deg, #000000 15.41%, rgba(0, 0, 0, 0.7) 100%);
+}
+.gradient-11 {
+  background-image: linear-gradient(348.19deg, rgba(255, 255, 255, 0.06) 5%, rgba(5, 7, 26, 0) 83.27%);
+
+}
+@keyframes shine {
+  0% {
+    background-position: 200% center;
+  }
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.animate-shine {
+  animation: shine linear infinite;
+}
+
+.hero-bg {
+  background: url(/hero-bg.png) no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
