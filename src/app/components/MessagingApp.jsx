@@ -2,6 +2,8 @@
 import { motion } from "framer-motion";
 import TertiaryButton from "./ThirdButton";
 import Image from "next/image";
+import ShinyText from "./Animations/ShinyText";
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -16,16 +18,10 @@ const MessagingApp = () => {
   return (
     <section className="xl:container mx-auto px-6 py-16 pb-4">
       {/* Heading */}
-      <motion.h2
-        initial="hidden"
-        whileInView="visible"
-        custom={0}
-        variants={fadeUp}
-        viewport={{ once: true, amount: 0.3 }}
-        className="text-center prompt-medium text-5xl md:text-7xl !leading-[120%] gradient-4 text-transparent bg-clip-text"
-      >
-        Privacy-First Products
-      </motion.h2>
+      <ShinyText 
+      text="Privacy-First Products"
+      className="text-center prompt-medium text-5xl md:text-7xl !leading-[120%] gradient-4 text-transparent bg-clip-text"
+      />
 
       {/* Sub-heading */}
       <motion.p
@@ -57,7 +53,10 @@ const MessagingApp = () => {
               viewport={{ once: true, amount: 0.3 }}
               className="flex flex-col gap-3 md:w-[65%]"
             >
-              <h3 className="prompt-medium text-3xl md:text-5xl text-transparent bg-clip-text gradient-4">Offline Messaging App</h3>
+              <ShinyText 
+              text="Offline Messaging App"
+              className="prompt-medium text-3xl md:text-5xl text-transparent bg-clip-text gradient-4"
+              />
               <TertiaryButton text="Live on Android & iOS" url="#" />
               <p className="prompt-regular text-white/63">
                 Transform how you communicate with our flagship messaging application that works even without internet connection.

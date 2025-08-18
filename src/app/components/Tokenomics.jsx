@@ -2,20 +2,17 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import ShinyText from "./Animations/ShinyText";
 
 const Tokenomics = () => {
     return (
         <section className="xl:container mx-auto px-6 py-16">
             {/* Heading */}
-            <motion.h2
-                initial={{ opacity: 0, y: 40 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                viewport={{ once: true }}
-                className="text-center prompt-medium text-5xl md:text-7xl !leading-[120%] text-transparent bg-clip-text gradient-4"
-            >
-                $Sentrax Tokenomics
-            </motion.h2>
+            
+            <ShinyText 
+            text="$Sentrax Tokenomics"
+            className="text-center prompt-medium text-5xl md:text-7xl !leading-[120%] text-transparent bg-clip-text gradient-4"
+            />
 
             <motion.p
                 initial={{ opacity: 0, y: 40 }}

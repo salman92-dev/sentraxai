@@ -2,6 +2,8 @@
 import TertiaryButton from "./ThirdButton";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ShinyText from "./Animations/ShinyText"; 
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -27,9 +29,10 @@ const Privacy = () => {
             className="flex flex-wrap items-center justify-between"
           >
             <div className="flex flex-col gap-3">
-              <h3 className="prompt-medium text-3xl md:text-5xl text-transparent bg-clip-text gradient-4">
-                Privacy Dashboard
-              </h3>
+              <ShinyText 
+              text="Privacy Dashboard"
+              className="prompt-medium text-3xl md:text-5xl text-transparent bg-clip-text gradient-4"
+              />
               <TertiaryButton text="Phase 2 Development" url="#" />
               <p className="prompt-regular text-white/63">
                 Your command center for Web3 privacy, accessible through an

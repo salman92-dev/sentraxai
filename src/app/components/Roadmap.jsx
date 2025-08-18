@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ShinyText from "./Animations/ShinyText";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
@@ -11,16 +12,10 @@ const Roadmap = () => {
   return (
     <section className="gradient-11">
       <div className="xl:container mx-auto px-6 py-16">
-        <motion.h2
-          className="text-center prompt-medium text-5xl md:text-7xl !leading-[120%] text-transparent bg-clip-text gradient-4"
-          initial="hidden"
-          whileInView="show"
-          variants={fadeInUp}
-          viewport={{ once: true }}
-        >
-          Sentrax Technical<br />Roadmap
-        </motion.h2>
-
+        <ShinyText 
+         text="Sentrax Technical Roadmap"
+         className="text-center prompt-medium text-5xl md:text-7xl !leading-[120%] text-transparent bg-clip-text gradient-4 md:px-40"
+        />
         <motion.p
           className="text-white/63 prompt-regular text-2xl text-center"
           initial="hidden"

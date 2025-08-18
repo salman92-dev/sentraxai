@@ -29,14 +29,22 @@ export default function Home() {
         <div className="w-full xl:container mx-auto md:px-6">
         <Navbar/>
          <main className="md:text-center text-white relative">
+          <Image
+                    src="/planet.png"
+                    alt="Planet"
+                    width={500}
+                    height={500}
+                    priority
+                    className="drop-shadow-2xl absolute bottom-[-5rem] max-md:left-0 max-md:relative max-md:top-12 left-[10rem] w-[45rem]"
+                  />
       
             <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 py-16 lg:py-24">
              
-              <div className="flex flex-col md:items-center gap-6">
+              <div className="flex flex-col items-center gap-6">
                 <BlurText
                   text="Privacy-First Tools for Web3"
                   delay={150} // time between each word/letter animation
-                  className="text-5xl prompt-semi md:text-7xl max-md:leading-[120%] md:max-w-2xl text-white"
+                  className="text-5xl prompt-semi md:text-7xl max-md:leading-[120%] md:max-w-2xl text-white text-center"
                   animateBy="words" // or "letters"
                   direction="top" // or "bottom"
                   stepDuration={0.4}
@@ -45,8 +53,8 @@ export default function Home() {
                     <Typewriter  texts={[
                     "Take back control of your digital life with enterprise-grade privacy tools built for the decentralized future",
                     ]}
-                    className="prompt-regular max-w-xl mx-auto text-lg text-white/63" />
-                <div className="flex gap-4 mt-4 flex-wrap md:justify-center">
+                    className="prompt-regular max-w-xl mx-auto text-lg text-white/63 text-center" />
+                <div className="flex gap-4 mt-4 flex-wrap justify-center">
                    <PrimaryButton text="Join the Fair Launch" url="#" />
                    <SecondaryButton text="Explore Products" url="#" />
                 </div>
@@ -54,26 +62,18 @@ export default function Home() {
 
             
               <div className="relative flex flex-wrap items-center justify-between mt-20 items-center">
-                <Image
-                    src="/planet.png"
-                    alt="Planet"
-                    width={500}
-                    height={500}
-                    priority
-                    className="hidden md:block drop-shadow-2xl absolute top-[-5rem] max-md:left-0 left-[10rem] w-[45rem]"
-                  />
               
                 <div className="text-white/63 prompt-regular  text-base lg:w-[35%]">
-                  <p className="flex max-md:flex-col gap-8 items-start">
+                  <p className="flex gap-8 items-start">
                     <Image src="/line.svg" alt="line" width={100} height={2} className="mt-[0.5rem]"/>
-                    <ShinyText text="A decentralized AI mesh for private access, encrypted autonomy, and off-grid freedom — without servers, surveillance or data trails" />
+                    <ShinyText text="Sentrax AI empowers you with unprecedented control over your personal data while delivering seamless, intuitive experiences across every platform. Our comprehensive ecosystem includes secure messaging, privacy dashboards, AI powered camera protection, and revolutionary social tools—all built with privacy-by-design principles." className="text-left" />
                     {/* A decentralized AI mesh for private access, encrypted autonomy, and off-grid freedom — without servers, surveillance or data trails */}
                   </p>
                   {/* <PrimaryButton text="Get Started" url="#" className="mt-4 md:ml-18" /> */}
                
                   <div className="mt-28 gradient-2 rounded-xl p-6 md:w-[50%]">
-                    <p className="text-white text-lg prompt-regular font-semibold">
-                      LOREM IPSUM<br/>DOLOR SIT
+                    <p className="text-white text-lg prompt-regular font-semibold text-left max-md:pr-32">
+                      LOREM IPSUM DOLOR SIT
                     </p>
                     <button className="mt-4 text-white/63  w-full text-end">
                       Learn More
@@ -81,7 +81,7 @@ export default function Home() {
                   </div>
 
                
-                  <div className="flex gap-4 mt-6">
+                  <div className="flex gap-4  max-md:justify-between mt-6">
                     <a href="" className="duration-200 hover:scale-120">
                        <Image src="/x.png" alt="x" width={40} height={40} />
                     </a>
@@ -99,28 +99,29 @@ export default function Home() {
 
               
                 <div className="relative flex flex-col items-center text-center lg:text-left w-full md:w-[25%]">
-                  <div className="mt-8 space-y-6 w-full">
-                    <div className="flex flex-col items-center lg:items-start">
-                      <span className="text-white prompt-regular-i text-xl flex max-md:flex-col items-center md:items-start gap-4 !leading-[150%]">
+                  <div className="mt-8 space-y-6 w-full relative">
+                    <Image src="/arrow-2.png" alt="arrow" width={19} height={239} className="absolute bottom-[-1rem]"/>
+                    <div className="flex flex-col items-start py-6">
+                      <p className="text-white prompt-regular-i text-left text-xl flex items-center md:items-start gap-4 !leading-[150%]">
                        <Image src="/shield.svg" alt="x" width={40} height={40} />
                         VALIDATORS<br/>SECURING NETWORK
-                      </span>
-                      <p className="prompt-regular text-3xl mt-2">450K+</p>
-                      <p className="text-white/63 text-sm max-w-xs">
+                      </p>
+                      <p className="prompt-regular text-3xl mt-12 ml-8">450K+</p>
+                      <p className="text-white/63 text-sm text-left ml-8">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                         do eiusmod.
                       </p>
                     </div>
 
-                    <div className="flex flex-col items-center lg:items-start">
+                    <div className="flex flex-col items-start pl-8">
                       <p className="prompt-regular text-3xl font-bold mt-2">5M+</p>
-                      <p className="text-white/63 text-sm max-w-xs">
+                      <p className="text-white/63 text-sm text-left">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                         do eiusmod.
                       </p>
                     </div>
 
-                    <div className="flex flex-col items-center lg:items-start">
+                    <div className="flex flex-col items-start mt-12 pl-8">
                       <p className="italic">LOREM IPSUM DOLOR</p>
                     </div>
                   </div>
@@ -191,7 +192,7 @@ export default function Home() {
         </div>
       </section>
 
-     <div style={{backgroundImage: "url(/glob.png)", backgroundRepeat: 'no-repeat', backgroundSize :'cover', backgroundPosition : '50% 45%'}}>
+     <div style={{backgroundImage: "url(/glob.png)", backgroundRepeat: 'no-repeat', backgroundSize :'cover', backgroundPosition : '50% 45%',}} className="max-md:bg-[0%_50%]">
        {/* -----------future-------- */}
       <Future />
       {/* -------Join------------- */}
@@ -199,9 +200,9 @@ export default function Home() {
      </div>
       {/* ---------messaging app------------- */}
       <MessagingApp />
-      <Privacy />
-      <PrivacyApp />
-      <Web3 />
+        <Privacy />
+        <PrivacyApp />
+        <Web3 />
 
       {/* ---------tokenomics----------- */}
       <Tokenomics />

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import TertiaryButton from "./ThirdButton";
 import Image from "next/image";
+import ShinyText from "./Animations/ShinyText";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
@@ -36,9 +37,10 @@ const PrivacyApp = () => {
               variants={fadeUp}
               custom={0}
             >
-              <h3 className="prompt-medium text-3xl md:text-5xl text-transparent bg-clip-text gradient-4">
-                Privacy Camera App
-              </h3>
+              <ShinyText 
+              text="Privacy Camera App"
+              className="prompt-medium text-3xl md:text-5xl text-transparent bg-clip-text gradient-4"
+              />
               <TertiaryButton text="Phase 3 Development" url="#" />
               <p className="prompt-regular text-white/63">
                 Revolutionary camera application with privacy built into every

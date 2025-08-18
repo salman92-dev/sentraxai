@@ -1,7 +1,7 @@
 'use client'
-
+import Image from 'next/image'
 import { motion } from 'framer-motion'
-
+import ShinyText from './Animations/ShinyText'
 // Your data
 const future = [
   {
@@ -59,9 +59,10 @@ const Future = () => {
         transition={{ duration: 0.8, ease: 'easeOut' }}
         viewport={{ once: true }}
       >
-        <h2 className="text-center prompt-medium text-5xl md:text-7xl !leading-[120%] gradient-4 text-transparent bg-clip-text">
-          The Complete Privacy Ecosystem
-        </h2>
+        <ShinyText 
+        text="The Complete Privacy Ecosystem"
+        className="text-center prompt-medium text-5xl md:text-7xl !leading-[120%] gradient-4 text-transparent bg-clip-text"
+        />
       </motion.div>
 
       {/* Cards */}
@@ -76,13 +77,9 @@ const Future = () => {
           <motion.div
             key={index}
             variants={card}
-            className="pt-[16rem] rounded-3xl p-6 shadow-lg hover:scale-105 transition-transform duration-300"
-            style={{
-              backgroundImage: `url(${item.img})`,
-              backgroundRepeat: 'no-repeat',
-              backgroundSize: 'cover',
-            }}
+            className="rounded-3xl p-6 shadow-lg hover:scale-105 transition-transform duration-300 bg-[#303030]"
           >
+            <Image src={item.img} alt={item.img} width={400} height={400}/>
             <h3 className="text-4xl prompt-semi mb-3">{item.heading}</h3>
             <p className="text-white/63 prompt-regular text-sm">
               {item.descrip}
@@ -97,7 +94,7 @@ const Future = () => {
         whileInView="visible"
         variants={container}
         viewport={{ once: true, amount: 0.3 }}
-        className="mt-16"
+        className="mt-16 md:mt-16"
       >
         <motion.h4
           variants={card}

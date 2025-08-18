@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import ShinyText from "./Animations/ShinyText";
 
 const Web3 = () => {
     const ref = useRef(null);
@@ -20,7 +21,7 @@ const Web3 = () => {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 className="p-[2px] gradient-5 rounded-lg overflow-hidden mt-8"
             >
-                <div className="bg-[#333030] rounded-lg py-6 px-8">
+                <div className="bg-[#333030] rounded-lg py-4 px-8">
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
                         animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -28,7 +29,10 @@ const Web3 = () => {
                         className="flex flex-wrap items-center justify-between"
                     >
                         <div className="flex flex-col gap-3">
-                            <h3 className="prompt-medium text-3xl md:text-5xl text-transparent bg-clip-text gradient-4">Web3 Social Media Platform</h3>
+                            <ShinyText 
+                            text="Web3 Social Media Platform"
+                            className="prompt-medium text-3xl md:text-5xl text-transparent bg-clip-text gradient-4"
+                            />
                             <TertiaryButton text="Confidential Development" url="#" />
                             <p className="prompt-regular text-white/63">
                                 A groundbreaking platform that will redefine social media privacy in the Web3 era..

@@ -1,22 +1,17 @@
 "use client";
 import { motion } from "framer-motion";
 import PrimaryButton from "./Button";
+import ShinyText from "./Animations/ShinyText";
 
 const Join = () => {
     return (
         <section className="xl:container mx-auto px-6 py-16 md:py-32">
             <div className="flex flex-col items-center gap-4">
                 {/* Heading */}
-                <motion.h2
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.6, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.3 }}
-                    className="text-center prompt-medium text-5xl md:text-7xl !leading-[120%] gradient-4 text-transparent bg-clip-text"
-                >
-                    Join the Privacy Revolution
-                </motion.h2>
-
+                <ShinyText 
+                text="Join the Privacy Revolution"
+                className="text-center prompt-medium text-5xl md:text-7xl !leading-[120%] gradient-4 text-transparent bg-clip-text"
+                />
                 {/* Paragraph */}
                 <motion.p
                     initial={{ opacity: 0, y: 40 }}
