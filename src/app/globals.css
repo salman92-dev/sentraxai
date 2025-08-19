@@ -126,3 +126,19 @@ body {
   background-size: cover;
   background-position: top center;
 }
+
+.glow-animate {
+  border-radius: 16px;
+  animation: glowFilter 2s infinite alternate;
+}
+
+@keyframes glowFilter {
+  from {
+    filter: drop-shadow(0 0 5px rgba(0, 200, 255, 0.6))
+            drop-shadow(0 0 10px rgba(0, 200, 255, 0.5));
+  }
+  to {
+    filter: drop-shadow(0 0 15px rgba(0, 200, 255, 1))
+            drop-shadow(0 0 30px rgba(0, 200, 255, 0.8));
+  }
+}

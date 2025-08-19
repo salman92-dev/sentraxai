@@ -35,7 +35,7 @@ export default function Home() {
                     width={500}
                     height={500}
                     priority
-                    className="drop-shadow-2xl absolute bottom-[-5rem] max-md:left-0 max-md:relative max-md:top-12 left-[10rem] w-[45rem]"
+                    className="glow-animate drop-shadow-2xl absolute bottom-[-5rem] max-md:left-0 max-md:relative max-md:top-12 left-[10rem] w-[45rem]"
                   />
       
             <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 py-16 lg:py-24">
@@ -83,16 +83,16 @@ export default function Home() {
                
                   <div className="flex gap-4  max-md:justify-between mt-6">
                     <a href="" className="duration-200 hover:scale-120">
-                       <Image src="/x.png" alt="x" width={40} height={40} />
+                       <Image src="/x.png" alt="x" width={40} height={40} className="glow-animate" />
+                    </a>
+                    <a href="" className="duration-200 hover:scale-120" >
+                       <Image src="/tg.png" alt="x" width={40} height={40}className="glow-animate" />
                     </a>
                     <a href="" className="duration-200 hover:scale-120">
-                       <Image src="/tg.png" alt="x" width={40} height={40} />
+                       <Image src="/insta.png" alt="x" width={40} height={40} className="glow-animate" />
                     </a>
                     <a href="" className="duration-200 hover:scale-120">
-                       <Image src="/insta.png" alt="x" width={40} height={40} />
-                    </a>
-                    <a href="" className="duration-200 hover:scale-120">
-                       <Image src="/yt.png" alt="x" width={40} height={40} />
+                       <Image src="/yt.png" alt="x" width={40} height={40} className="glow-animate" />
                     </a>
                   </div>
                 </div>
@@ -199,7 +199,8 @@ export default function Home() {
       <Join />
      </div>
       {/* ---------messaging app------------- */}
-      <MessagingApp />
+
+          <MessagingApp />
         <Privacy />
         <PrivacyApp />
         <Web3 />
