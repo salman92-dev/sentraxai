@@ -56,9 +56,9 @@ const Faqs = () => {
   };
 
   return (
-    <section className="gradient-9">
-      <div className="xl:container mx-auto px-6 py-16">
-        <div className="flex flex-wrap gap-12 items-center">
+    <section className="gradient-9 overflow-hidden">
+      <div className="w-full xl:container mx-auto px-6 py-16">
+        <div className="w-full flex flex-wrap gap-12 items-center">
           {/* Left Side Tabs */}
           <motion.div 
             className="md:w-[48%]"

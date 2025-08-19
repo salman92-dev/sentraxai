@@ -13,7 +13,7 @@ const Web3 = () => {
     return (
         <section 
           ref={ref} 
-          className="xl:container mx-auto px-6 py-4 pb-4"
+          className="xl:container mx-auto px-6 py-4 pb-4 sticky "
         >
             <motion.div
                 initial={{ opacity: 0, y: 50 }}

@@ -20,12 +20,12 @@ import BlurText from "./components/Animations/BlurText";
 import ShinyText from "./components/Animations/ShinyText";
 import Typewriter from "./components/Animations/Typewriter";
 import { motion } from "framer-motion";
-
+import PrivacyProduct from "./components/PrivacyProduct";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden bg-[#1B1B1B]">
-      <div className="hero-bg overflow-hidden">
+    <div className="bg-[#1B1B1B]">
+      <div className="hero-bg overflow-x">
         <div className="w-full xl:container mx-auto md:px-6">
         <Navbar/>
          <main className="md:text-center text-white relative">
@@ -132,12 +132,12 @@ export default function Home() {
         </div>
       </div>
       {/* ---------partners--------- */}
-      <div className="">
+      {/* <div className="overflow-x">
         <div className="flex max-md:flex-wrap items-center gap-12">
             <p className=" ml-6 md:ml-12 prompt-bold text-4xl md:w-40">Partners</p>
             <MarqueeLogo />
         </div>
-      </div>
+      </div> */}
 
       {/* ---------why choose------- */}
       <section className="xl:container mx-auto px-6 py-16">
@@ -200,10 +200,12 @@ export default function Home() {
      </div>
       {/* ---------messaging app------------- */}
 
+        <div className="relative overflow-visible">
           <MessagingApp />
         <Privacy />
         <PrivacyApp />
         <Web3 />
+        </div>
 
       {/* ---------tokenomics----------- */}
       <Tokenomics />
