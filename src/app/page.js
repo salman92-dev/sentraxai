@@ -20,7 +20,7 @@ import BlurText from "./components/Animations/BlurText";
 import ShinyText from "./components/Animations/ShinyText";
 import Typewriter from "./components/Animations/Typewriter";
 import { motion } from "framer-motion";
-import PrivacyProduct from "./components/PrivacyProduct";
+
 
 export default function Home() {
   return (

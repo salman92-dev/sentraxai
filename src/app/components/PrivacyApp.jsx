@@ -16,7 +16,7 @@ const fadeUp = {
 
 const PrivacyApp = () => {
   return (
-    <section className="xl:container mx-auto px-6 py-4 pb-4 sticky top-[-2rem]">
+    <section className="xl:container mx-auto px-6 py-4 pb-4">
       <motion.div
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}

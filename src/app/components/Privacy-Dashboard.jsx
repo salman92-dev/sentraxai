@@ -16,7 +16,7 @@ const fadeUp = {
 
 const Privacy = () => {
   return (
-    <section className="xl:container mx-auto px-6 sticky top-[2rem]">
+    <section className="xl:container mx-auto px-6">
       <div className="p-[2px] gradient-5 rounded-lg overflow-hidden mt-8">
         <div className="bg-[#333030] rounded-lg py-6 px-8">
           {/* Top Section */}

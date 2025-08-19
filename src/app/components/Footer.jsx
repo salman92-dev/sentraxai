@@ -86,12 +86,6 @@ const Footer = () => {
           <a href="">
             <Image src="/tg.png" alt="telegram" width={30} height={30} />
           </a>
-          <a href="">
-            <Image src="/insta.png" alt="instagram" width={30} height={30} />
-          </a>
-          <a href="">
-            <Image src="/yt.png" alt="youtube" width={30} height={30} />
-          </a>
         </motion.div>
       </motion.div>
 

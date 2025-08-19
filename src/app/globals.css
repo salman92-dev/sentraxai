@@ -23,6 +23,10 @@ body {
   background: var(--background);
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+
+}
+html {
+    scroll-behavior: smooth;
 }
 .overflow-x {
   overflow-x: hidden;
@@ -96,7 +100,7 @@ body {
    background-image: linear-gradient(108.94deg, #7E61FF -26.06%, #FFBD7E 73.56%);
 }
 .gradient-7 {
-  background-image: linear-gradient(235.81deg, rgba(255, 255, 255, 0.08) 7.67%, rgba(126, 97, 255, 0.09) 121.98%);
+  background-image: linear-gradient(235.81deg, #303030 7.67%, #303030 121.98%);
 }
 .gradient-8 {
   background: linear-gradient(348.19deg, rgba(255, 255, 255, 0.06) 5%, rgba(5, 7, 26, 0) 83.27%);

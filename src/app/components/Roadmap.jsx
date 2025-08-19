@@ -10,7 +10,7 @@ const fadeInUp = {
 
 const Roadmap = () => {
   return (
-    <section className="gradient-11 overflow-hidden">
+    <section className="gradient-11">
       <div className="xl:container mx-auto px-6 py-16">
         <ShinyText 
          text="Sentrax Technical Roadmap"
@@ -49,7 +49,7 @@ const Roadmap = () => {
             ].map((item, idx) => (
               <motion.div
                 key={idx}
-                className="w-full md:w-[30%] gradient-7 rounded-t-lg"
+                className="w-full md:w-[30%] gradient-7 rounded-t-lg max-md:sticky top-24"
                 initial="hidden"
                 whileInView="show"
                 variants={fadeInUp}
@@ -108,7 +108,7 @@ const Roadmap = () => {
             ].map((item, idx) => (
               <motion.div
                 key={idx}
-                className="md:w-[30%] gradient-7 rounded-t-lg"
+                className="md:w-[30%] gradient-7 rounded-t-lg sticky top-24"
                 initial="hidden"
                 whileInView="show"
                 variants={fadeInUp}

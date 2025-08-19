@@ -16,7 +16,7 @@ const fadeUp = {
 
 const MessagingApp = () => {
   return (
-    <section className="xl:container mx-auto px-6 py-16 pb-4 sticky top-[-11rem]">
+    <section className="xl:container mx-auto px-6 py-16 pb-4 sticky" id="products">
       {/* Heading */}
       <ShinyText 
       text="Privacy-First Products"

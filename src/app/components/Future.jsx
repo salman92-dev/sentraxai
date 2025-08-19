@@ -77,7 +77,7 @@ const Future = () => {
           <motion.div
             key={index}
             variants={card}
-            className="rounded-3xl p-6 shadow-lg hover:scale-105 transition-transform duration-300 bg-[#303030]"
+            className="rounded-3xl p-6 shadow-lg hover:scale-105 transition-transform duration-300 bg-[#303030] sticky top-24"
           >
             <Image src={item.img} alt={item.img} width={400} height={400}/>
             <h3 className="text-4xl prompt-semi mb-3">{item.heading}</h3>
