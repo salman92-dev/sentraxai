@@ -25,7 +25,7 @@ import PrivacyProduct from "./components/PrivacyProduct";
 export default function Home() {
   return (
     <div className="bg-[#1B1B1B]">
-      <div className="hero-bg overflow-x">
+      <div className="hero-bg">
         <div className="w-full xl:container mx-auto md:px-6">
         <Navbar/>
          <main className="md:text-center text-white relative">
@@ -55,8 +55,8 @@ export default function Home() {
                     ]}
                     className="prompt-regular max-w-xl mx-auto text-lg text-white/63 text-center" />
                 <div className="flex gap-4 mt-4 flex-wrap justify-center">
-                   <PrimaryButton text="Join the Fair Launch" url="#" />
-                   <SecondaryButton text="Explore Products" url="#" />
+                   <PrimaryButton text="Explore the mesh" url="#" />
+                   <SecondaryButton text="Explore Products" url="#products" />
                 </div>
               </div>
 
@@ -72,8 +72,8 @@ export default function Home() {
                   {/* <PrimaryButton text="Get Started" url="#" className="mt-4 md:ml-18" /> */}
                
                   <div className="mt-28 gradient-2 rounded-xl p-6 md:w-[50%]">
-                    <p className="text-white text-lg prompt-regular font-semibold text-left max-md:pr-32">
-                      LOREM IPSUM DOLOR SIT
+                    <p className="text-white text-sm prompt-regular font-semibold text-left max-md:pr-32">
+                      Decentralized Privacy Layer Stay connected through secure, peer-to-peer mesh messaging with no servers, no metadata, and no central control.
                     </p>
                     <button className="mt-4 text-white/63  w-full text-end">
                       Learn More
@@ -88,42 +88,38 @@ export default function Home() {
                     <a href="" className="duration-200 hover:scale-120" >
                        <Image src="/tg.png" alt="x" width={40} height={40}className="glow-animate" />
                     </a>
-                    <a href="" className="duration-200 hover:scale-120">
-                       <Image src="/insta.png" alt="x" width={40} height={40} className="glow-animate" />
-                    </a>
-                    <a href="" className="duration-200 hover:scale-120">
-                       <Image src="/yt.png" alt="x" width={40} height={40} className="glow-animate" />
-                    </a>
                   </div>
                 </div>
 
               
                 <div className="relative flex flex-col items-center text-center lg:text-left w-full md:w-[25%]">
                   <div className="mt-8 space-y-6 w-full relative">
-                    <Image src="/arrow-2.png" alt="arrow" width={19} height={239} className="absolute bottom-[-1rem]"/>
+                    <Image src="/arrow-2.png" alt="arrow" width={23} height={239} className="absolute bottom-[-1rem]"/>
                     <div className="flex flex-col items-start py-6">
                       <p className="text-white prompt-regular-i text-left text-xl flex items-center md:items-start gap-4 !leading-[150%]">
                        <Image src="/shield.svg" alt="x" width={40} height={40} />
                         VALIDATORS<br/>SECURING NETWORK
                       </p>
-                      <p className="prompt-regular text-3xl mt-12 ml-8">450K+</p>
+                      <p className="prompt-regular text-xl mt-12 ml-8">450+ Active Validators</p>
                       <p className="text-white/63 text-sm text-left ml-8">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                        do eiusmod.
+                        Independent validators distributed globally, securing and authenticating the Sentrax mesh.
                       </p>
                     </div>
 
                     <div className="flex flex-col items-start pl-8">
-                      <p className="prompt-regular text-3xl font-bold mt-2">5M+</p>
+                      <p className="prompt-regular text-xl font-bold mt-2">5,000+ Relays Processed</p>
                       <p className="text-white/63 text-sm text-left">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                        do eiusmod.
+                        Encrypted peer-to-peer hops verified across the network during testnet and pilot deployments.
                       </p>
                     </div>
 
-                    <div className="flex flex-col items-start mt-12 pl-8">
-                      <p className="italic">LOREM IPSUM DOLOR</p>
+                    <div className="flex flex-col items-start pl-8">
+                      <p className="prompt-regular text-xl font-bold mt-2">Growing Ecosystem</p>
+                      <p className="text-white/63 text-sm text-left">
+                        From encrypted messaging to private hosting and token swaps, Sentrax is expanding into a full privacy-native layer.
+                      </p>
                     </div>
+                    
                   </div>
                 </div>
               </div>
@@ -132,12 +128,12 @@ export default function Home() {
         </div>
       </div>
       {/* ---------partners--------- */}
-      {/* <div className="overflow-x">
+      <div className="overflow-x">
         <div className="flex max-md:flex-wrap items-center gap-12">
             <p className=" ml-6 md:ml-12 prompt-bold text-4xl md:w-40">Partners</p>
             <MarqueeLogo />
         </div>
-      </div> */}
+      </div>
 
       {/* ---------why choose------- */}
       <section className="xl:container mx-auto px-6 py-16">
@@ -200,7 +196,7 @@ export default function Home() {
      </div>
       {/* ---------messaging app------------- */}
 
-        <div className="relative overflow-visible">
+        <div className="relative overflow-visible" id="products">
           <MessagingApp />
         <Privacy />
         <PrivacyApp />
