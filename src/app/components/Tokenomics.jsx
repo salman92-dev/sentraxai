@@ -31,9 +31,9 @@ const Tokenomics = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
                 viewport={{ once: true }}
-                className="flex flex-wrap items-center justify-center gap-12 mt-6"
+                className="flex flex-wrap items-center justify-center gap-12 mt-6 text-white"
             >
-                <p className="prompt-regular text-2xl text-center">Total Supply: <span className="text-white/63">1,000,000,000 $sentrax</span></p>
+                <p className="prompt-regular text-2xl text-center">Total supply:  <span className="text-white/63">1,000,000 $sentrax</span></p>
                 <p className="prompt-regular text-2xl text-center">Launch Method: <span className="text-white/63">Fair Launch</span></p>
                 <p className="prompt-regular text-2xl text-center">Transaction Tax: <span className="text-white/63">5%</span></p>
             </motion.div>
@@ -83,7 +83,7 @@ const Tokenomics = () => {
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
                     viewport={{ once: true }}
-                    className="absolute w-[70%] left-[13rem] bottom-[-5rem] select-none hidden md:block"
+                    className="absolute w-[70%] left-[10rem] bottom-[-5rem] select-none hidden md:block"
                 >
                     <Image src="/token.png" alt="token" width={1526} height={882} />
                 </motion.div>
@@ -97,16 +97,16 @@ const Tokenomics = () => {
                     className="flex flex-col gap-24 w-full md:w-[30%]"
                 >
                     <div>
-                        <h3 className="prompt-semi text-4xl mb-1">60%</h3>
+                        <h3 className="prompt-semi text-4xl mb-1">5%</h3>
                         <p>{/* line svg */}</p>
-                        <h5 className="prompt-regular text-transparent bg-clip-text gradient-6 text-2xl mt-3 mb-2">Revenue Sharing</h5>
-                        <p className="prompt-regular text-white/40">distributed back to token holders</p>
+                        <h5 className="prompt-regular text-transparent bg-clip-text gradient-6 text-2xl mt-3 mb-2">Buy Tax</h5>
+                        {/* <p className="prompt-regular text-white/40">distributed back to token holders</p> */}
                     </div>
                     <div>
-                        <h3 className="prompt-semi text-4xl mb-1">25%</h3>
+                        <h3 className="prompt-semi text-4xl mb-1">5%</h3>
                         <p>{/* line svg */}</p>
-                        <h5 className="prompt-regular text-transparent bg-clip-text gradient-6 text-2xl mt-3 mb-2">Development Fund</h5>
-                        <p className="prompt-regular text-white/40">fuels continued innovation</p>
+                        <h5 className="prompt-regular text-transparent bg-clip-text gradient-6 text-2xl mt-3 mb-2">Sell Tax</h5>
+                        {/* <p className="prompt-regular text-white/40">fuels continued innovation</p> */}
                     </div>
                 </motion.div>
 
@@ -119,16 +119,16 @@ const Tokenomics = () => {
                     className="flex flex-col gap-24 w-full md:w-[30%]"
                 >
                     <div>
-                        <h3 className="prompt-semi text-4xl mb-1">10%</h3>
+                        <h3 className="prompt-semi text-4xl mb-1">Liquidity Pool</h3>
                         <p>{/* line svg */}</p>
-                        <h5 className="prompt-regular text-transparent bg-clip-text gradient-6 text-2xl mt-3 mb-2">Marketing & Partnerships</h5>
-                        <p className="prompt-regular text-white/40">drives ecosystem expansion</p>
+                        <h5 className="prompt-regular text-transparent bg-clip-text gradient-6 text-2xl mt-3 mb-2">Locked</h5>
+                        {/* <p className="prompt-regular text-white/40">drives ecosystem expansion</p> */}
                     </div>
                     <div>
-                        <h3 className="prompt-semi text-4xl mb-1">5%</h3>
-                        <p>{/* line svg */}</p>
-                        <h5 className="prompt-regular text-transparent bg-clip-text gradient-6 text-2xl mt-3 mb-2">Liquidity Support</h5>
-                        <p className="prompt-regular text-white/40">supports market stability</p>
+                        <h3 className="prompt-semi text-4xl mb-1">CA</h3>
+                        {/* <p>line svg</p> */}
+                        <h5 className="prompt-regular text-transparent bg-clip-text gradient-6 text-2xl mt-3 mb-2">Renounced</h5>
+                        {/* <p className="prompt-regular text-white/40">supports market stability</p> */}
                     </div>
                 </motion.div>
             </div>

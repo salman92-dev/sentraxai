@@ -99,20 +99,7 @@ const Footer = () => {
       <div className="border-b border-[#fff]/15"></div>
 
       {/* Partner Logos */}
-      <motion.div
-        className="xl:container mx-auto px-6 py-6"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={fadeUp}
-      >
-        <div className="flex flex-wrap gap-8 items-center md:justify-between">
-          <Image src="/item-5.svg" alt="item-5" width={150} height={20} />
-          <Image src="/item-6.svg" alt="item-6" width={150} height={20} />
-          <Image src="/item-7.svg" alt="item-7" width={100} height={20} />
-          <Image src="/item-8.svg" alt="item-8" width={150} height={20} />
-        </div>
-      </motion.div>
+     
     </footer>
   );
 };
