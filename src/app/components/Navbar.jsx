@@ -41,11 +41,11 @@ const path = usePathname();
         </div>
       </div>
       <div className="hidden md:flex gap-12 ml-12 prompt-medium text-base text-white/63">
-          <Link href="#stats">About Us</Link>
+          <Link href="#about">About Us</Link>
           <Link href="#why-choose">Why Choose Us?</Link>
-          <Link href="#why-choose">Our Services</Link>
-          <Link href="#reviews">Tokenomics</Link>
-          <Link href="#faq">Roadmap</Link> 
+          <Link href="#features">Our Features</Link>
+          <Link href="#tokenomics">Tokenomics</Link>
+          <Link href="#roadmap">Roadmap</Link> 
         </div>
 
       <div className="flex items-center space-x-4">
@@ -81,7 +81,7 @@ const path = usePathname();
        <div className={`${menuOpen ? 'block blurred' : 'hidden'} sm:hidden absolute w-full`}></div>
         <div className={`md:hidden absolute top-[5.2rem] left-0 right-0 prompt-medium bg-[#000] flex flex-col  px-6 gap-14 py-12 h-[100vh] w-[100%] transition-transform duration-300 ease-in-out ${menuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
           <Link 
-          href="#stats" 
+          href="#about" 
           className="hover:scale(1.1) text-2xl flex items-center justify-between" 
           onClick={()=> setMenuOpen(false)}
           >
@@ -89,27 +89,27 @@ const path = usePathname();
             </Link>
 
           <Link 
-          href="#howitworks" 
+          href="#why-choose" 
           className="text-2xl flex items-center justify-between" 
           onClick={()=> setMenuOpen(false)}
           >
             Why Choose us
             </Link>
           <Link 
-          href="#why-choose" 
+          href="#features" 
           className="text-2xl flex items-center justify-between" 
           onClick={()=> setMenuOpen(false)}
           >
-            Our Services
-            </Link>
-          <Link href="#reviews" 
+            Our Features
+          </Link>
+          <Link href="#tokenomics" 
           className="text-2xl flex items-center justify-between" 
           onClick={()=> setMenuOpen(false)}
           >
             Tokenomics
-            </Link>
+          </Link>
           <Link 
-          href="#faq" 
+          href="#roadmap" 
           className="text-2xl flex items-center justify-between" 
           onClick={()=> setMenuOpen(false)}
           >
