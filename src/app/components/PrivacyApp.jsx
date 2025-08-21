@@ -73,27 +73,27 @@ const PrivacyApp = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 gap-y-12 mt-8">
             {[
               {
-                img: "/img-1.png",
+                img: "/img-9.png",
                 title: "Real-Time Privacy Filtering",
                 desc: "Live analysis and risk alerts as you compose shots",
               },
               {
-                img: "/img-2.png",
+                img: "/img-10.png",
                 title: "Automatic Metadata Removal",
                 desc: "Every photo and video stripped of identifying data",
               },
               {
-                img: "/img-3.png",
+                img: "/img-11.png",
                 title: "AI-Powered Protection",
                 desc: "Contextual analysis of privacy implications",
               },
               {
-                img: "/img-4.png",
+                img: "/img-12.png",
                 title: "Instant Social Sharing",
                 desc: "Direct social media posting with complete protection",
               },
               {
-                img: "/img-5.png",
+                img: "/img-13.png",
                 title: "Secure Cloud Backup",
                 desc: "Zero-knowledge encrypted backup",
               },
@@ -107,7 +107,7 @@ const PrivacyApp = () => {
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.2 }}
               >
-                <Image src={item.img} alt={item.title} width={39} height={39} />
+                <Image src={item.img} alt={item.title} width={156} height={156} className="w-10" />
                 <h5 className="prompt-regular text-white text-lg">
                   {item.title}
                 </h5>

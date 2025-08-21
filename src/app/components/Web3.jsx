@@ -80,7 +80,7 @@ const Web3 = () => {
                                 transition={{ duration: 0.6, ease: "easeOut" }}
                                 className="flex flex-col gap-3"
                             >
-                                <Image src={`/img-${i + 1}.png`} alt={`img-${i + 1}`} width={39} height={39} />
+                                <Image src={`/img-${i + 14}.png`} alt={`img-${i + 1}`} width={156} height={156} className="w-10" />
                                 <h5 className="prompt-regular text-white text-lg">{text}</h5>
                             </motion.div>
                         ))}

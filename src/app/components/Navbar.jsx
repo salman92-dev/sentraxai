@@ -51,7 +51,7 @@ const path = usePathname();
       <div className="flex items-center space-x-4">
         <PrimaryButton text="Join Community" url="#" className='max-md:hidden' />
         <button
-          className="md:hidden bg-[#FFFFFF1A] rounded-[8px] cursor-pointer relative z-100"
+          className="md:hidden bg-[#FFFFFF1A] rounded-[5px] cursor-pointer relative z-100"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <svg
@@ -80,13 +80,13 @@ const path = usePathname();
       </div>
        <div className={`${menuOpen ? 'block blurred' : 'hidden'} sm:hidden absolute w-full`}></div>
         <div className={`md:hidden absolute top-[5.2rem] left-0 right-0 prompt-medium bg-[#000] flex flex-col  px-6 gap-14 py-12 h-[100vh] w-[100%] transition-transform duration-300 ease-in-out ${menuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
-          <Link 
+        <Link 
           href="#about" 
           className="hover:scale(1.1) text-2xl flex items-center justify-between" 
           onClick={()=> setMenuOpen(false)}
-          >
-            About Us 
-            </Link>
+        >
+         About Us 
+        </Link>
 
           <Link 
           href="#why-choose" 
@@ -94,7 +94,7 @@ const path = usePathname();
           onClick={()=> setMenuOpen(false)}
           >
             Why Choose us
-            </Link>
+          </Link>
           <Link 
           href="#features" 
           className="text-2xl flex items-center justify-between" 

@@ -19,7 +19,7 @@ const Tokenomics = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
                 viewport={{ once: true }}
-                className="text-white/63 prompt-regular text-2xl text-center"
+                className="text-white/63 prompt-regular text-xl md:text-2xl text-center"
             >
                 Fair launch with transparent revenue sharing and<br />
                 sustainable ecosystem growth
@@ -46,7 +46,7 @@ const Tokenomics = () => {
                 viewport={{ once: true }}
                 className="flex flex-wrap items-center justify-between gradient-7 p-4 rounded-xl gap-12 mt-6"
             >
-                <p className="prompt-medium text-2xl flex gap-2 items-center">
+                <p className="prompt-medium text-xl md:text-2xl flex gap-2 items-center">
                     <span>
                         <svg width="14" height="50" viewBox="0 0 14 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="14" height="50" rx="4" fill="url(#paint0_linear_51_463)" />
@@ -60,7 +60,7 @@ const Tokenomics = () => {
                     </span>
                     Liquidity Pool: 85% (850,000,000 $sentrax)
                 </p>
-                <p className="prompt-medium text-2xl flex gap-2 items-center">
+                <p className="prompt-medium text-xl md:text-2xl flex gap-2 items-center">
                     <span>
                         <svg width="14" height="50" viewBox="0 0 14 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="14" height="50" rx="4" fill="url(#paint0_linear_51_463)" />

@@ -5,16 +5,16 @@ import Image from "next/image";
 
 const MarqueeLogo = () => {
   const logos = [
-    { src: "/item-1.svg", width: 224 },
-    { src: "/item-2.svg", width: 224 },
-    { src: "/item-3.svg", width: 240 },
-    { src: "/item-4.svg", width: 112 },
+    { src: "/item-1.svg", width: 150,height : 70 },
+    { src: "/item-2.svg", width: 140 , height : 70 },
+    { src: "/item-3.svg", width: 100,height : 40 },
+    { src: "/item-4.svg", width: 182, height : 70 },
     
   ];
 
   return (
      <div className="max-md:px-6 w-full">
-      <div className="rounded-2xl py-4 overflow-hidden gradient-3 rounded-xl ml-auto">
+      <div className="rounded-2xl h-20 flex items-center overflow-hidden gradient-3 rounded-xl ml-auto">
         <Marquee
           speed={100}        // pixels per second
           pauseOnHover={true}  // nice touch!
@@ -23,11 +23,11 @@ const MarqueeLogo = () => {
             {logos.map((logo, index) => (
             <Image
               key={index}
-              className="w-40 mx-8"
+              className="mx-8"
               src={logo.src}
               alt="logo"
               width={logo.width}
-              height={70}
+              height={logo.height}
               loading="lazy"
             />
           ))}

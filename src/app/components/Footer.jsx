@@ -24,7 +24,7 @@ const Footer = () => {
           className="mb-8"
           variants={fadeUp}
         >
-          <Image src="/logo.png" alt="logo" width={255} height={86} />
+          <Image src="/logo.png" alt="logo" width={255} height={86} className="w-60" />
         </motion.div>
 
         {/* Footer Grid */}
@@ -81,10 +81,10 @@ const Footer = () => {
           variants={fadeUp}
         >
           <a href="">
-            <Image src="/x.png" alt="x" width={30} height={30} />
+            <Image src="/x.png" alt="x" width={214} height={215} className="w-12 md:w-8 glow-animate" />
           </a>
           <a href="">
-            <Image src="/tg.png" alt="telegram" width={30} height={30} />
+            <Image src="/tg.png" alt="telegram" width={214} height={215} className="w-12 md:w-8 glow-animate" />
           </a>
         </motion.div>
       </motion.div>

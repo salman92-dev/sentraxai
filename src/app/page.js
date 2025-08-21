@@ -25,7 +25,7 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <div className="bg-[#1B1B1B]">
-      <div className="hero-bg">
+      <div className="hero-bg border-b-2 border-white/5">
         <div className="w-full xl:container mx-auto md:px-6">
         <Navbar/>
          <main className="md:text-center text-white relative" id="about">
@@ -81,7 +81,7 @@ export default function Home() {
                   </div>
 
                
-                  <div className="flex gap-4  max-md:justify-between mt-6">
+                  <div className="flex gap-6 mt-6">
                     <a href="" className="duration-200 hover:scale-120">
                        <Image src="/x.png" alt="x" width={40} height={40} className="glow-animate" />
                     </a>
@@ -94,7 +94,7 @@ export default function Home() {
               
                 <div className="relative flex flex-col items-center text-center lg:text-left w-full md:w-[25%]">
                   <div className="mt-8 space-y-6 w-full relative">
-                    <Image src="/arrow-2.png" alt="arrow" width={23} height={239} className="absolute bottom-[-1rem]"/>
+                    <Image src="/arrow-2.png" alt="arrow" width={18} height={239} className="absolute md:w-5 bottom-[2.6rem] md:bottom-[2rem]"/>
                     <div className="flex flex-col items-start py-6">
                       <p className="text-white prompt-regular-i text-left text-xl flex items-center md:items-start gap-4 !leading-[150%]">
                        <Image src="/shield.svg" alt="x" width={40} height={40} />
@@ -130,7 +130,7 @@ export default function Home() {
       {/* ---------partners--------- */}
       <div className="overflow-x">
         <div className="flex max-md:flex-wrap items-center gap-12">
-            <p className=" ml-6 md:ml-12 prompt-bold text-4xl md:w-40">Partners</p>
+            <p className=" ml-6 md:ml-12 prompt-bold text-4xl md:w-40 max-md:mt-6">Partners</p>
             <MarqueeLogo />
         </div>
       </div>
@@ -166,7 +166,7 @@ export default function Home() {
              </motion.div>
 
              <motion.ul 
-             className="flex justify-between mt-16"
+             className="flex justify-between mt-8 mb-4"
              initial={{ opacity: 0, y: 50 }}      // hidden at start
              whileInView={{ opacity: 1, y: 0 }}    // animate when in view
              transition={{ duration: 0.8, ease: "easeOut" }}
@@ -197,7 +197,7 @@ export default function Home() {
       {/* ---------messaging app------------- */}
 
         <div className="relative overflow-visible" id="products">
-          <MessagingApp />
+        <MessagingApp />
         <Privacy />
         <PrivacyApp />
         <Web3 />

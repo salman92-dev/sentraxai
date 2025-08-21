@@ -126,7 +126,7 @@ const Privacy = () => {
                 custom={i + 1}
                 className="flex flex-col gap-3"
               >
-                <Image src={block.icon} alt={block.title} width={39} height={39} />
+                <Image src={block.icon} alt={block.title} width={156} height={156} className="w-10" />
                 <h5 className="prompt-regular text-white text-lg">{block.title}</h5>
                 <ul className="text-white/63 space-y-3">
                   {block.features.map(([highlight, text], idx) => (

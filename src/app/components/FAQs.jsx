@@ -70,7 +70,7 @@ const Faqs = () => {
             <h2 className="gradient-10 text-transparent bg-clip-text md:text-5xl prompt-medium">
               Frequently Asked Questions
             </h2>
-            <div className="mt-8 space-y-2">
+            <div className="mt-8 space-y-4 md:space-y-2">
               <h4 className={`flex items-center gap-2 text-3xl cursor-pointer ${data === gFaq ? 'text-black prompt-semi' : 'text-black/70 prompt-regular'}`} onClick={()=>{setData(gFaq)}}>
                 ➤ General Questions
               </h4>
@@ -108,7 +108,7 @@ const Faqs = () => {
                       onClick={() => toggle(index)}
                       className="w-full flex gap-4 items-center manrope-medium text-base py-5 text-left gradient-10 text-transparent bg-clip-text"
                     >
-                      <span className="text-3xl">{isOpen ? '-' : '+'}</span>
+                      <span className={`${isOpen ? 'text-3xl' : 'text-3xl'}`}>{isOpen ? '-' : '+'}</span>
                       <span>{item.question}</span>
                     </button>
 

@@ -110,7 +110,7 @@ const MessagingApp = () => {
                 custom={i}
                 className="flex flex-col gap-3"
               >
-                <Image src={feature.img} alt={feature.title} width={39} height={39} />
+                <Image src={feature.img} alt={feature.title} width={156} height={156} className="w-10" />
                 <h5 className="prompt-regular text-white text-lg">{feature.title}</h5>
                 <p className="prompt-regular text-sm text-white/63">{feature.desc}</p>
               </motion.div>
