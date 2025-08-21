@@ -35,7 +35,7 @@ export default function Home() {
                     width={500}
                     height={500}
                     priority
-                    className="glow-animate drop-shadow-2xl absolute bottom-[-5rem] max-md:left-0 max-md:relative max-md:top-12 left-[10rem] w-[45rem]"
+                    className="glow-animate drop-shadow-2xl absolute bottom-[0rem] max-md:left-0 max-md:relative max-md:top-16 left-[15rem] w-full md:w-[43rem]"
                   />
       
             <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 py-16 lg:py-24">
