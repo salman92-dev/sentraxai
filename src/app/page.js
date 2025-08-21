@@ -161,7 +161,7 @@ export default function Home() {
                 <a href="#" className="prompt-regular text-white">
                   Learn More
                 </a>
-                <Image src="/people.png" alt="people" height={42} width={139} />
+                <Image src="/people.png" alt="people" height={168} width={554} className="w-26" />
                </div>
              </motion.div>
 
