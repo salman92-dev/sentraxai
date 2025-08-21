@@ -6,7 +6,7 @@ import ShinyText from "./Animations/ShinyText";
 
 const Tokenomics = () => {
     return (
-        <section className="xl:container mx-auto px-6 py-16 overflow-hidden">
+        <section className="xl:container mx-auto px-6 py-16 overflow-hidden" id="tokenomics">
             {/* Heading */}
             
             <ShinyText 

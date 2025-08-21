@@ -10,7 +10,7 @@ const fadeInUp = {
 
 const Roadmap = () => {
   return (
-    <section className="gradient-11">
+    <section className="gradient-11" id="roadmap">
       <div className="xl:container mx-auto px-6 py-16">
         <ShinyText 
          text="Sentrax Technical Roadmap"

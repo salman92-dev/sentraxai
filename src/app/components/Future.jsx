@@ -51,7 +51,7 @@ const card = {
 
 const Future = () => {
   return (
-    <div className="xl:container mx-auto px-6 py-16">
+    <div className="xl:container mx-auto px-6 py-16" id='features'>
       {/* Heading */}
       <motion.div
         initial={{ opacity: 0, y: -40 }}

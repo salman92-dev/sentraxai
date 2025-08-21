@@ -28,7 +28,7 @@ export default function Home() {
       <div className="hero-bg">
         <div className="w-full xl:container mx-auto md:px-6">
         <Navbar/>
-         <main className="md:text-center text-white relative">
+         <main className="md:text-center text-white relative" id="about">
           <Image
                     src="/planet.png"
                     alt="Planet"
@@ -136,7 +136,7 @@ export default function Home() {
       </div>
 
       {/* ---------why choose------- */}
-      <section className="xl:container mx-auto px-6 py-16">
+      <section className="xl:container mx-auto px-6 py-16" id="why-choose">
         <div className="flex flex-wrap gap-8 items-center justify-between">
            <BlurText text="Why Choose Sentrax AI?" className="prompt-medium text-5xl md:text-7xl !leading-[140%] md:w-[40%]" />
            <ShinyText text="Sentrax AI empowers users with unprecedented control over their
