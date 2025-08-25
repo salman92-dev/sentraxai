@@ -35,7 +35,7 @@ export default function Home() {
                     width={500}
                     height={500}
                     priority
-                    className="glow-animate absolute bottom-[0rem] max-md:left-[14%] max-md:relative max-md:top-26 left-[15rem] w-full md:w-[60rem]"
+                    className="glow-animate absolute bottom-[0rem] max-md:left-[12%] max-md:relative max-md:top-26 left-[15rem] w-full md:w-[60rem]"
                   />
       
             <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 py-16 lg:py-24">
