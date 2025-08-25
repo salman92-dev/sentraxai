@@ -25,17 +25,17 @@ import { motion } from "framer-motion";
 export default function Home() {
   return (
     <div className="bg-[#1B1B1B]">
-      <div className="hero-bg border-b-2 border-white/5">
+      <div className="hero-bg border-b-2 border-white/5 overflow-hidden">
         <div className="w-full xl:container mx-auto md:px-6">
         <Navbar/>
          <main className="md:text-center text-white relative" id="about">
           <Image
-                    src="/planet.png"
+                    src="/hero-img.png"
                     alt="Planet"
                     width={500}
                     height={500}
                     priority
-                    className="glow-animate drop-shadow-2xl absolute bottom-[0rem] max-md:left-0 max-md:relative max-md:top-16 left-[15rem] w-full md:w-[43rem]"
+                    className="glow-animate absolute bottom-[0rem] max-md:left-[14%] max-md:relative max-md:top-26 left-[15rem] w-full md:w-[60rem]"
                   />
       
             <div className="relative z-10 max-w-7xl mx-auto px-6 pt-24 py-16 lg:py-24">
